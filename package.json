@@ -1,7 +1,7 @@
 {
-  "name": "starter-kit",
+  "name": "site",
   "version": "1.0.0",
-  "description": "A demo app",
+  "description": "My site",
   "main": "index.js",
   "author": "GerardVee",
   "license": "MIT",

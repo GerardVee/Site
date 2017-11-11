@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Button from '../atoms/Button';
-import Body from '../organisms/Body';
 import PageTitle from '../atoms/PageTitle';
 
 class Home extends React.Component
@@ -11,8 +10,7 @@ class Home extends React.Component
     {
         return (
             <div className='col-sm'>
-                <PageTitle>Demo App</PageTitle>
-                <Body/>
+                <PageTitle>GerardVee</PageTitle>
                 <Button bold fill='#FADA5E' shade='white' stroke='none'>Add</Button>
                 <Button bold fill='none' shade='#FADA5E' stroke='#FADA5E'>Edit</Button>
                 <Button bold fill='none' shade='#FADA5E' stroke='#FADA5E'>Swap</Button>
