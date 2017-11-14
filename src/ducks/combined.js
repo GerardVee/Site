@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import { ContentsReducer } from './contents';
-import { CommentsReducer } from './comments';
+import { ContentReducer } from './content';
+import { ImagesReducer } from './images'
 
-export default combineReducers({ contents: ContentsReducer, comments: CommentsReducer });
+export default combineReducers({ content: ContentReducer, images: ImagesReducer });

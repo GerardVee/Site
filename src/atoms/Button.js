@@ -37,7 +37,7 @@ class LButton extends React.Component
             if (type === 'graphic')
             {
                 return (
-                    <button className={ className } onClick={ onClick } type={ type }>
+                    <button className={ className } onClick={ _onClick } type={ type }>
                         <i className={ `fa fa-${ icon } fa-2x` }></i><br/>
                         { children }
                     </button>
@@ -46,8 +46,8 @@ class LButton extends React.Component
             else
             {
                 return (
-                    <button className={ className } onClick={ onClick } type={ type }>
-                        <i className={ `fa fa-${ icon }` }></i> { ' ' }{ children }
+                    <button className={ className } onClick={ _onClick } type={ type }>
+                        <i className={ `fa fa-${ icon }` }></i>{ ' ' + children }
                     </button>
                 );
             }

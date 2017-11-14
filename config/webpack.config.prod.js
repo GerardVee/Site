@@ -40,8 +40,7 @@ module.exports =
             {
                 NODE_ENV: JSON.stringify('production'),
                 agent: JSON.stringify('BROWSER'),
-                PORT: JSON.stringify(''),
-                BASE_URL: JSON.stringify(process.env.BASE_URL)
+                PORT: JSON.stringify('')
             }
         }),
         new webpack.optimize.OccurrenceOrderPlugin(),

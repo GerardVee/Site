@@ -1,11 +1,11 @@
-## Starter-kit
+## gerardvee.com
 
-[![Build Status](https://travis-ci.org/GerardVee/starter-kit.svg?branch=master)](https://travis-ci.org/GerardVee/starter-kit)
+[![Build Status](https://travis-ci.org/GerardVee/site.svg?branch=master)](https://travis-ci.org/GerardVee/site)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-An example app of my coding style/coding setup.
+The source for my website.
 
-A starter-kit.
+Please give credit!
 
 ## Requirements
 
@@ -13,6 +13,10 @@ A starter-kit.
 
 2. an .env file detailing the following:
 
+* NO_REPLY_SERVICE (service for nodemailer [ Gmail, etc. ])
+* NO_REPLY_EMAIL (nodemailer email)
+* NO_REPLY_PASSWORD (nodemailer password)
+* NO_REPLY_FORWARDS (example [exact syntax]: example1@gmail.com, example2@gmail.com)
 * NODE_ENV (either dev for developement or production for production)
 * MONGOOSE_CONNECT_LOCATION (the path to your mongodb connection)
 * PORT_ADDR (port number for your app)
@@ -20,25 +24,15 @@ A starter-kit.
 
 3. global installation of [localtunnel](https://github.com/localtunnel/localtunnel) for seeing the app anywhere and [json-server](https://github.com/typicode/json-server) for server mockups.
 
-4. copying your id_rsa to .travis and naming it deploy_key, getting a [personal access token](https://github.com/settings/tokens), and getting the deployment url for your remote server (it's easiest to run "git init --bare ~/{PROJECT_NAME}.git", ".git" being optional). Also don't forget to login to travis via travis login. Then you must run
-
-```bash
-travis encrypt DEPLOY_REPO="ssh://{SSH_USERNAME}@{SSH_SITE}:/{PATH_TO_PROJECT}/{PROJECT_NAME}" --add (PROJECT_NAME corresponding to your git init name)
-cd .travis
-travis encrypt-file deploy_key --add
-cd ..
-travis encrypt -r {GIT_USERNAME}/starter-kit 'GITHUB_SECRET_TOKEN={YOUR_SECRET_TOKEN}' --add
-```
-
 ## What to modify
  
-Anything you want. It's a starter-kit, have fun, and set up your own work!
+Navigate to localhost:{PORT_ADDR}/manage, and have fun editing to your liking!
 
 ## How to run
 
 ### Development
 
-#### Server-side focused editing
+#### Server-side focused editing (RECOMMENDED!)
 
 ```bash
 yarn start
@@ -83,18 +77,6 @@ yarn run build
 yarn run start-prod
 ```
 
-I will add more for Travis, and pushing our code to a remote server :).
-
 ## Reason for creation
 
-To have a semented code style/setup for [site](https://gerardvee.com/).
-
-[repository](https://github.com/GerardVee/gerardvee.com) for reference
-
-## Notes
-
-I'd like to thank [this](https://chrisdown.name/2015/09/27/auto-merging-successful-builds-from-travis-ci.html) travis guide. It really helped!
-Of course, the code came from [here](https://github.com/cdown/travis-automerge), feel free to star and look around!
-
-Look into this [site](http://krisjordan.com/essays/setting-up-push-to-deploy-with-git), to get an idea about setting up your own deployable web server.
-Also this [site](https://gist.github.com/noelboss/3fe13927025b89757f8fb12e9066f2fa) is very valuable, so you won't get repo names, or the like mixed up for your remote deployable web server. Make sure to edit certain elements in .travis.yml.
+To make my [site](https://gerardvee.com/) open sourced!

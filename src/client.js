@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { hydrate, render } from 'react-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 
@@ -23,7 +23,7 @@ else
 
 const store = createStore(allReducers, preloadedState, composeEnhancers(applyMiddleware(thunkMiddleware)));
 
-render(<App store={ store }/>, document.querySelector('#app'));
+hydrate(<App store={ store }/>, document.querySelector('#app'));
 
 if (process.env.NODE_ENV === 'dev' && module.hot)
 {

@@ -1,6 +1,4 @@
-{
-  "content":
-  [
+[
     {
       "type": "header",
       "title": "GerardVee",
@@ -92,16 +90,4 @@
       "body": "Please tell me crucial information about yourself and your project. I should reply within one or two days to work something out with you.",
       "query": "What is your project? Why do you want it done? What do you want to do with it? How can I assist you in the process? Financial and temporal budgets are loved.*"
     }
-  ],
-  "images":
-  [
-    {
-      "name": "header",
-      "location": "/images/20171112_145800.jpg"
-    },
-    {
-      "name": "placeholder-project",
-      "location": "/images/20171112_145889.png"
-    }
-  ]
-}
+]
