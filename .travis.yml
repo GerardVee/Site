@@ -12,7 +12,7 @@ addons:
   ssh_known_hosts:
   - gerardvee.com
   - 107.170.197.76
-#last one is ssh
+# last one is ssh
 env:
   global:
   - secure: VuIA96MNb+yyHslo8TVCkh+sVgNcRbkYL2J3SCYVw5XjSPhFrTGdYTryqJWyRcvHMp1rX1zaxtGxALp3tXVz59FueyyIUfpfhBAFKKlYi5/P3C1etMUh+TxwUKhvOqAn81WmaG7jKy64VfdPNpwN9ctWLiR5xSTFWqHl69CxegvnFXwI7ahMUzs51rlTIlHo/tln/kIl4pMI5Q1W+V/KQeZXGFRzGY7E+2/OS9dL+K1GG5vS2XJ20sDqx7lF1THNnFIZGoLI8xS7XdoEAqbBj/F9vJojvmyy8MlxyWdO4d7qqFGHJDdIMJrteCGBHB9Q59GZpvoPb7B3JQAv1qQoPZFApyphkxC9QGuvts7HBW5WGh3qObSIcCk/EbN7MgKpL9oaynT/n6fsOhXhcFapL1cHqpC86vJs9NgOcrc4BvZx60SnhqbllKMGUX04k/U3wJoioBsufeyTtXCOyn/kMbsaWcYIBhlXm7dBrT8zcMaLACu3Q5wVOd0MxFoT/W6jR+HJSkLW2NhFVesj1spYUCyeas5QMPPQ/J3oyG6IMleF/Rz735jqajq0I4ts430fX6VTYzPahD2vx+1MNIInHS8PFFsvYkfK1LLwloFNPfNOXfuhUtTGNJkOwemXobaVkBPoOq6sGlRtDnh6XLLrjWHntOOfYSwuDK6dIHmwiUU=
