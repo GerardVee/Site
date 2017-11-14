@@ -5,7 +5,7 @@ then
     chmod 600 .travis/deploy_key
     ssh-add .travis/deploy_key
     git remote add deploy "$DEPLOY_REPO"
-    git push deploy
+    git push deploy master
 else
     curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge
     chmod a+x /tmp/travis-automerge
