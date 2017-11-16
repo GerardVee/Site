@@ -31,7 +31,7 @@ class LocalWeather extends React.Component
     {
         return (
             <div className='col-sm' style={{ padding: 0 }}>
-                <PageTitle>LocalWeather</PageTitle>
+                <PageTitle>LocalWeather - GerardVee</PageTitle>
                 <WeatherApp/>
             </div>
         );
