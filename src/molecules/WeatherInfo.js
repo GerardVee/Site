@@ -49,7 +49,7 @@ class WeatherInfo extends React.Component
         const { weather, className } = this.props;
         return (
             <div className={ `row ${ className }` }>
-                <PageTitle>{ weather.description }</PageTitle>
+                <PageTitle>{ weather.description } - LocalWeather</PageTitle>
                 <PageIcon>{ weather.icon }</PageIcon>
                 <div className='col-sm-12 center'>
                     <Title bold shade='white' size='2.8x' size-md='4x'>Weather Forecast for { weather.city }</Title>
