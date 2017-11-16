@@ -3,4 +3,5 @@ node_modules/*
 .travis/deploy_key
 .notes
 public/images/*
+public/js/*
 dist/*

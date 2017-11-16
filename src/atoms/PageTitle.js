@@ -5,13 +5,13 @@ export default class extends React.Component
     componentDidMount()
     {
         const { children: title } = this.props;
-        document.title = title;
+        document.title = Array.isArray(title) ? title.join('') : title;
     }
 
     componentDidUpdate()
     {
         const { children: title } = this.props;
-        document.title = title;
+        document.title = Array.isArray(title) ? title.join('') : title;
     }
 
     render()
