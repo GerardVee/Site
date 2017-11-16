@@ -4,7 +4,15 @@
         "location": "/images/20171112_145800.jpg"
     },
     {
-        "name": "placeholder-project",
-        "location": "/images/20171112_145889.png"
+        "name": "LocalWeather",
+        "location": "/images/20171115_145900.png"
+    },
+    {
+        "name": "WikiViewer",
+        "location": ""
+    },
+    {
+        "name": "Calculator",
+        "location": ""
     }
 ]

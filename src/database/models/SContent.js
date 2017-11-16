@@ -16,8 +16,7 @@ const SContent = new mongoose.Schema({
             body: String,
             icon: String,
             description: String,
-            url: String,
-            picture: String
+            url: String
         }
     ],
     snippets: [ String ],

@@ -42,20 +42,17 @@
         {
           "title": "LocalWeather",
           "description": "A weather stats viewer. Syncs up to your location non-intrusively, or you can choose to use geolocation.",
-          "url": "/projects/localweather",
-          "picture": ""
+          "url": "/projects/localweather"
         }, 
         {
           "title": "WikiViewer",
           "description": "A Google of sorts for Wikipedia. Feel free to search up anything and everything!",
-          "url": "/projects/wikiviewer",
-          "picture": ""
+          "url": "/projects/wikiviewer"
         },
         {
           "title": "Calculator",
           "description": "A simple calculator inspired by the Samsung Galaxy 8's calculator.",
-          "url": "/projects/calculator",
-          "picture": ""
+          "url": "/projects/calculator"
         }
       ]
     },

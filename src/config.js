@@ -1,5 +1,6 @@
 export default
 {
+    DARKSKY_API_KEY: process.env.DARKSKY_API_KEY,
     NO_REPLY_SERVICE: process.env.NO_REPLY_SERVICE,
     NO_REPLY_EMAIL: process.env.NO_REPLY_EMAIL,
     NO_REPLY_PASSWORD: process.env.NO_REPLY_PASSWORD,

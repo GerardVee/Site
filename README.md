@@ -13,6 +13,7 @@ Please give credit!
 
 2. an .env file detailing the following:
 
+* DARKSKY_API_KEY
 * NO_REPLY_SERVICE (service for nodemailer [ Gmail, etc. ])
 * NO_REPLY_EMAIL (nodemailer email)
 * NO_REPLY_PASSWORD (nodemailer password)
@@ -80,3 +81,7 @@ yarn run start-prod
 ## Reason for creation
 
 To make my [site](https://gerardvee.com/) open sourced!
+
+## Tips
+
+Never forget to chmod +x post-receive.

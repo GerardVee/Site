@@ -5,6 +5,7 @@ import Text from '../atoms/Text';
 import Title from '../atoms/Title';
 import Button from '../atoms/Button';
 import PageTitle from '../atoms/PageTitle';
+import { media } from '../_helpers/media';
 
 class Lost extends React.Component
 {
@@ -16,13 +17,13 @@ class Lost extends React.Component
                 <PageTitle>404</PageTitle>
                 <div className='row'>
                     <div className='col-sm-12 center'>
-                        <Title bold shade='#FADA5E' size='6x'>404 Lost :(</Title>
+                        <Title bold shade='#FADA5E' size='4x'>404 Lost :(</Title>
                     </div>
-                    <div className='col-sm-offset-3 col-sm-6 center'>
-                        <Text shade='black' size='2x'>You seem to have stumbled upon a broken link. Maybe you were looking for one of my projects?</Text>
+                    <div className='col-sm-12 col-md-offset-3 col-md-6 center'>
+                        <Text shade='black' size='1.2x'>You seem to have stumbled upon a broken link. Maybe you were looking for one of my projects?</Text>
                     </div>
-                    <div className='col-sm-offset-3 col-sm-6 center'>
-                        <Text shade='black' size='2x'>If so, they are currently under migration, and I hope to have them live soon!</Text>
+                    <div className='col-sm-12 col-md-offset-3 col-md-6 center'>
+                        <Text shade='black' size='1.2x'>If so, they are currently under migration, and I hope to have them live soon!</Text>
                     </div>
                     <div className='col-sm-12 center'>
                         <Button bold icon='home' type='graphic' shade='white' fill='#FADA5E' stroke='none' to='/' stretch>Take me back home</Button>
@@ -38,4 +39,14 @@ export default styled(Lost)`
         padding-top: 2em;
         padding-bottom: 3em;
     }
+    ${ media.small`
+        >div>div>h1 {
+            font-size: 2em;
+        }
+    ` };
+    ${ media.medium`
+        >div>div>h1 {
+            font-size: 4em;   
+        }
+    ` };
 `;

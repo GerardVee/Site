@@ -8,7 +8,6 @@ import Text from '../src/atoms/Text';
 test('Text has default styles', () =>
 {
     const wrapper = shallow(<Text/>);
-    expect(wrapper).toHaveStyleRule('font-size', '1em');
     expect(wrapper).toHaveStyleRule('color', 'black');
     expect(wrapper).not.toHaveStyleRule('font-weight', 'bold');
     expect(wrapper).not.toHaveStyleRule('text-decoration', 'underline');    

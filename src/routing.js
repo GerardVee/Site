@@ -70,6 +70,23 @@ app.post('/contact', async (req, res) =>
     }
 });
 
+app.post('/getmyweather', async (req, res) =>
+{
+    const { latitude, longitude } = req.body;
+    try
+    {
+        const time = Math.round(Date.now() / 1000);
+        const response = await fetch(`https://api.darksky.net/forecast/${ Config.DARKSKY_API_KEY }/${ latitude },${ longitude },${ time }`);
+        const weather = await response.json();
+        res.send(weather);
+    }
+    catch (error)
+    {
+        console.log(error);
+        res.send({ error: 'Could not find info' });
+    }
+});
+
 app.get('/content', async (req, res) =>
 {
     const content = await Content.all();

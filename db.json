@@ -45,7 +45,7 @@
           "title": "LocalWeather",
           "description": "A weather stats viewer. Syncs up to your location non-intrusively, or you can choose to use geolocation.",
           "url": "/projects/localweather",
-          "picture": ""
+          "picture": "/images/20171115_145900.png"
         }, 
         {
           "title": "WikiViewer",
@@ -100,8 +100,16 @@
       "location": "/images/20171112_145800.jpg"
     },
     {
-      "name": "placeholder-project",
-      "location": "/images/20171112_145889.png"
+      "name": "LocalWeather",
+      "location": "/images/20171115_145900.png"
+    },
+    {
+      "name": "WikiViewer",
+      "location": ""
+    },
+    {
+      "name": "Calculator",
+      "location": ""
     }
   ]
 }

@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router';
 
 import Home from './pages/Home';
 import Lost from './pages/Lost';
+import LocalWeather from './pages/LocalWeather';
 
 export default class Routes extends React.Component
 {
@@ -12,6 +13,7 @@ export default class Routes extends React.Component
             <div className='container' style={{ padding: 0 }}>
                 <Switch>
                     <Route exact path='/' component={ Home }/>
+                    <Route exact path='/projects/LocalWeather' component={ LocalWeather }/>
                     <Route path='*' component={ Lost }/>
                 </Switch>
             </div>

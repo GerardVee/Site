@@ -8,7 +8,6 @@ import Title from '../src/atoms/Title';
 test('Title has default styles', () =>
 {
     const wrapper = shallow(<Title/>);
-    expect(wrapper).toHaveStyleRule('font-size', '1em');
     expect(wrapper).toHaveStyleRule('color', 'black');
     expect(wrapper).not.toHaveStyleRule('font-weight', 'bold');
     expect(wrapper).not.toHaveStyleRule('text-decoration', 'underline');    

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { withRouter } from 'react-router-dom';
 
+import { media } from '../_helpers/media';
+
 /*
  * defaults:
  *  colors = { shade: black, stroke: none }
@@ -19,6 +21,8 @@ import { withRouter } from 'react-router-dom';
     *stroke: same as above, but for underline
      bold: should it be bold or not bold (default)?
      size: can be '2x' or '3x', etc to scale size, '1x' (default)
+     size-md: same as above but for medium sizing and up
+     size-lg: same as abobe but for large sizing and up
 */
 
 class LTitle extends React.Component
@@ -41,8 +45,15 @@ export default styled(Title)`
     text-decoration-color: ${ props.stroke };
     ` : '' };
     ${ props => props.bold ? 'font-weight: bold;' : '' };        
-    ${ props => (props.size && props.size !== '1') ? ` 
-    font-size: ${`${ Number(props.size.slice(0, -1)) * 1 }em`};` : 'font-size: 1em;' };
+    ${ props => props.size && ` 
+        font-size: ${`${ Number(props.size.slice(0, -1)) * 1 }em`};
+    ` };
+    ${ media.medium`
+        ${ props => props['size-md'] && `font-size: ${`${ Number(props['size-md'].slice(0, -1)) * 1 }em`};` }
+    ` };
+    ${ media.large`
+        ${ props => props['size-lg'] && `font-size: ${`${ Number(props['size-lg'].slice(0, -1)) * 1 }em`};` }
+    ` };
     ${ props => props.onClick ? `
         &:hover{
             cursor: pointer;
