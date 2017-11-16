@@ -52,7 +52,7 @@
   "scripts": {
     "start": "json-server --watch db.json & ./node_modules/.bin/nodemon --exec ./node_modules/.bin/babel-node --inspect src/server.js",
     "dev": "json-server --watch db.json & ./node_modules/.bin/babel-node --inspect src/server.js",
-    "build": "./node_modules/.bin/babel src -d dist & ./node_modules/.bin/cross-env NODE_ENV=production PLATFORM=web ./node_modules/.bin/webpack --config config/webpack.config.prod.js",
+    "build": "./node_modules/.bin/babel src -d dist && ./node_modules/.bin/cross-env NODE_ENV=production PLATFORM=web ./node_modules/.bin/webpack --config config/webpack.config.prod.js",
     "start-prod": "node dist/server.js",
     "start-server": "pm2 gracefulReload dist/server.js --name gerardvee.com",
     "test": "./bin/test"
