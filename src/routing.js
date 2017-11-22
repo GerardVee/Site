@@ -87,6 +87,21 @@ app.post('/getmyweather', async (req, res) =>
     }
 });
 
+app.get('/getquote', async (req, res) =>
+{
+    try
+    {
+        const response = await fetch(`https://api.forismatic.com/api/1.0/?method=getQuote&key=${ Config.FORISMATIC_KEY }&format=json&lang=en`);
+        const quoteData = await response.json();
+        res.send(quoteData);
+    }
+    catch (error)
+    {
+        console.log(error);
+        res.send({ error: 'Could not get a quote' });
+    }
+});
+
 app.get('/content', async (req, res) =>
 {
     const content = await Content.all();

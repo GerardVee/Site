@@ -30,14 +30,14 @@ class LButton extends React.Component
 {
     render()
     {
-        const { className, children, onClick, type, to, href, icon } = this.props;
+        const { className, children, onClick, type, to, href, icon, disabled } = this.props;
         const _onClick = to ? () => this.props.history.push(to) : href ? () => window.location.href = href : onClick;
         if (icon && icon !== 'none')
         {
             if (type === 'graphic')
             {
                 return (
-                    <button className={ className } onClick={ _onClick } type={ type }>
+                    <button className={ className } onClick={ _onClick } type={ type } disabled={ disabled }>
                         <i className={ `fa fa-${ icon } fa-2x` }></i><br/>
                         { children }
                     </button>
@@ -46,13 +46,13 @@ class LButton extends React.Component
             else
             {
                 return (
-                    <button className={ className } onClick={ _onClick } type={ type }>
+                    <button className={ className } onClick={ _onClick } type={ type } disabled={ disabled }>
                         <i className={ `fa fa-${ icon }` }></i>{ ' ' + children }
                     </button>
                 );
             }
         }
-        return <button className={ className } children={ children } onClick={ _onClick } type={ type }/>;
+        return <button className={ className } children={ children } onClick={ _onClick } type={ type } disabled={ disabled }/>;
     }
 }
 

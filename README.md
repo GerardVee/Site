@@ -14,6 +14,7 @@ Please give credit!
 2. an .env file detailing the following:
 
 * DARKSKY_API_KEY
+* FORISMATIC_KEY
 * NO_REPLY_SERVICE (service for nodemailer [ Gmail, etc. ])
 * NO_REPLY_EMAIL (nodemailer email)
 * NO_REPLY_PASSWORD (nodemailer password)
@@ -25,7 +26,7 @@ Please give credit!
 
 3. global installation of [localtunnel](https://github.com/localtunnel/localtunnel) for seeing the app anywhere and [json-server](https://github.com/typicode/json-server) for server mockups.
 
-## What to modify
+## What to modify (SOON)
  
 Navigate to localhost:{PORT_ADDR}/manage, and have fun editing to your liking!
 
@@ -64,7 +65,7 @@ to make it available for all to see using localtunnel.
 #### Testing
 
 ```bash
-yarn run test
+yarn test
 ```
 
 Eslint and jest will test our code!
@@ -84,4 +85,6 @@ To make my [site](https://gerardvee.com/) open sourced!
 
 ## Tips
 
-Never forget to chmod +x post-receive.
+Never forget to chmod +x post-receive on your remote server's hooks.
+
+Remember to independently update your .env file on both your client and your server.

@@ -1,4 +1,6 @@
-[
+{
+  "content":
+  [
     {
       "type": "header",
       "title": "GerardVee",
@@ -42,17 +44,26 @@
         {
           "title": "LocalWeather",
           "description": "A weather stats viewer. Syncs up to your location non-intrusively, or you can choose to use geolocation.",
-          "url": "/projects/localweather"
-        }, 
+          "url": "/projects/localweather",
+          "finished": true
+        },
+        {
+          "title": "RandomQuote",
+          "description": "A quote generator. Interact and share the quotes you enjoy!",
+          "url": "/projects/randomquote",
+          "finished": false
+        },
         {
           "title": "WikiViewer",
           "description": "A Google of sorts for Wikipedia. Feel free to search up anything and everything!",
-          "url": "/projects/wikiviewer"
+          "url": "/projects/wikiviewer",
+          "finished": false
         },
         {
           "title": "Calculator",
           "description": "A simple calculator inspired by the Samsung Galaxy 8's calculator.",
-          "url": "/projects/calculator"
+          "url": "/projects/calculator",
+          "finished": false
         }
       ]
     },
@@ -87,4 +98,28 @@
       "body": "Please tell me crucial information about yourself and your project. I should reply within one or two days to work something out with you.",
       "query": "What is your project? Why do you want it done? What do you want to do with it? How can I assist you in the process? Financial and temporal budgets are loved.*"
     }
-]
+  ],
+  "images":
+  [
+    {
+      "name": "header",
+      "location": "/images/20171112_145800.jpg"
+    },
+    {
+      "name": "LocalWeather",
+      "location": "/images/20171115_145900.png"
+    },
+    {
+      "name": "RandomQuote",
+      "location": ""
+    },
+    {
+      "name": "WikiViewer",
+      "location": ""
+    },
+    {
+      "name": "Calculator",
+      "location": ""
+    }
+  ]
+}

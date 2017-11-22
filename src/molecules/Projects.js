@@ -15,7 +15,8 @@ const Projects = ({ content, images, className }) => (
                         <Title bold shade='#524E4D' size='1.8x'>{ item.title }</Title>
                         <Text shade='#524E4D' size='0.9x'>{ item.description }</Text>
                         <img className='hidden-md hidden-lg' src={ images.find(img => img.name === item.title).location } height="50%"/>
-                        <Button bold fill='#FADA5E' shade='white' stroke='none' to={ item.url }>Visit</Button>
+                        { item.finished && <Button bold fill='#FADA5E' shade='white' stroke='none' to={ item.url }>Visit</Button> }
+                        { !item.finished && <Button bold fill='#9B30FF' shade='white' stroke='none' disabled>Not Ready</Button> }
                     </div>,
                     <div className='col-sm-12 col-lg-2 col-md-3 center hidden-sm' key={ `projects-picture-${ index }` }>
                         <img src={ images.find(img => img.name === item.title).location } width="100%"/>
