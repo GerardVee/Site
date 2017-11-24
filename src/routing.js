@@ -97,8 +97,7 @@ app.get('/getquote', async (req, res) =>
     }
     catch (error)
     {
-        console.log(error);
-        res.send({ error: 'Could not get a quote' });
+        res.send({ quoteText: 'Better to fail gracefully than to make a cheap workaround.', quoteAuthor: '', error: 'Could not get a quote' });
     }
 });
 

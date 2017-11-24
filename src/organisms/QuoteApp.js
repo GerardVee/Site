@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import objectIsEmpty from '../_helpers/emptyObject';
-// quoteapp instead; import WeatherInfo from '../molecules/WeatherInfo';
+import Quoter from '../molecules/Quoter';
 
 class QuoteApp extends React.Component
 {
@@ -11,8 +11,9 @@ class QuoteApp extends React.Component
         const { quote, className } = this.props;
         return (
             <div className={ `container ${ className }` }>
-                { !(objectIsEmpty(quote)) && JSON.stringify(quote) }
-                Tap 'T' for nexT; hold to Tweet.
+                { !(objectIsEmpty(quote)) && <Quoter quote={ quote }/> }
+                { !(objectIsEmpty(quote)) && quote.error && <p>Please reload the webpage</p> }
+                Tap Modal for next quote; hold to Tweet.
             </div>
         );
     }
