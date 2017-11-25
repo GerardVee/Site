@@ -1,13 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import styled from 'styled-components';
 
-import Text from '../atoms/Text';
+// import Text from '../atoms/Text';
 import Title from '../atoms/Title';
-import Button from '../atoms/Button';
-import PageIcon from '../atoms/PageIcon';
+// import Button from '../atoms/Button';
 import PageTitle from '../atoms/PageTitle';
-import { media } from '../_helpers/media';
 
 const inContext = (author, quote) =>
 {
@@ -29,9 +25,7 @@ const windowSettings = 'height=400,width=400,status=yes,toolbar=no,menubar=no,lo
 class Quoter extends React.Component
 {
     state = { currentQuote: '' };
-
     timer = null;
-    
     tweetOut()
     {
         this.timer = setTimeout(() =>
@@ -68,8 +62,9 @@ class Quoter extends React.Component
         const { quoteText: quote, quoteAuthor: author } = currentQuote || q;
         return (
             <div className={ `row ${ className }` }>
+                <PageTitle>RandomQuote</PageTitle>
                 <div onMouseDown={ () => this.tweetOut() } onMouseUp={ () => this.nextQuote() } onTouchStart={ () => this.tweetOut() } onTouchEnd={ () => this.nextQuote() }>
-                    <h1>{ `"${ quote.trim() }"` }</h1>
+                    <Title>{ `"${ quote.trim() }"` }</Title>
                     <p>{ `- ${ author.trim() || 'Anonymous' }` }</p>
                 </div>
             </div>
