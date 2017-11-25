@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 
 import Header from '../molecules/Header';
+import { media } from '../_helpers/media';
 
 class Introduction extends React.Component
 {
@@ -22,11 +23,18 @@ const mapStateToProps = ({ content, images }) => ({ content, images });
 export default connect(mapStateToProps)(styled(Introduction)`
     padding: 0;
     margin-top: 0;
-    >div {
-        background: ${ props => props.images ? `url(${ props.images.filter(picture => picture.name === 'header')[0].location })` : 'grey' } no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
+    ${ media.small`
+        >div {
+            background: #474B56 no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    ` };
+    ${ media.medium`
+        >div {
+            background: ${ props => props.images ? `url(${ props.images.filter(picture => picture.name === 'header')[0].location })` : 'grey' } no-repeat center center fixed;            
+        }
+    ` };
 `);
