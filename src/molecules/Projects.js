@@ -31,6 +31,9 @@ export default styled(Projects)`
     >div>div>div>h1 {
         padding-bottom: 1em;
     }
+    >div>div>div>img {
+        padding-bottom: 1em;
+    }
     >div>div>div>p {
         ${ media.small`
             width: 100%;

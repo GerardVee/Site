@@ -51,7 +51,7 @@
           "title": "RandomQuote",
           "description": "A quote generator. Interact and share the quotes you enjoy!",
           "url": "/projects/randomquote",
-          "finished": false
+          "finished": true
         },
         {
           "title": "WikiViewer",
@@ -111,7 +111,7 @@
     },
     {
       "name": "RandomQuote",
-      "location": ""
+      "location": "/images/20171115_145901.png"
     },
     {
       "name": "WikiViewer",

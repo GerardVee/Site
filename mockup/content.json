@@ -49,7 +49,7 @@
           "title": "RandomQuote",
           "description": "A quote generator. Interact and share the quotes you enjoy!",
           "url": "/projects/randomquote",
-          "finished": false
+          "finished": true
         },
         {
           "title": "WikiViewer",
