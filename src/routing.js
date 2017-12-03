@@ -101,6 +101,23 @@ app.get('/getquote', async (req, res) =>
     }
 });
 
+app.post('/wiki', async (req, res) =>
+{
+    const { query } = req.body;
+    const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=${ query }`;
+    try
+    {
+        const response = await fetch(url);
+        const wikiData = await response.json();
+        res.send(wikiData);
+    }
+    catch (error)
+    {
+        console.log(error);
+        res.send({ error: 'Could not get a wikipedia info' });
+    }
+});
+
 app.get('/content', async (req, res) =>
 {
     const content = await Content.all();

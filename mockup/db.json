@@ -57,7 +57,7 @@
           "title": "WikiViewer",
           "description": "A Google of sorts for Wikipedia. Feel free to search up anything and everything!",
           "url": "/projects/wikiviewer",
-          "finished": false
+          "finished": true
         },
         {
           "title": "Calculator",
@@ -115,7 +115,7 @@
     },
     {
       "name": "WikiViewer",
-      "location": ""
+      "location": "/images/20171115_145902.png"
     },
     {
       "name": "Calculator",

@@ -55,7 +55,7 @@
           "title": "WikiViewer",
           "description": "A Google of sorts for Wikipedia. Feel free to search up anything and everything!",
           "url": "/projects/wikiviewer",
-          "finished": false
+          "finished": true
         },
         {
           "title": "Calculator",
