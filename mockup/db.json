@@ -60,10 +60,10 @@
           "finished": true
         },
         {
-          "title": "Calculator",
+          "title": "Calculated",
           "description": "A simple calculator inspired by the Samsung Galaxy 8's calculator.",
-          "url": "/projects/calculator",
-          "finished": false
+          "url": "https://play.google.com/store/apps/details?id=com.calculated",
+          "finished": true
         }
       ]
     },
@@ -118,8 +118,8 @@
       "location": "/images/20171115_145902.png"
     },
     {
-      "name": "Calculator",
-      "location": ""
+      "name": "Calculated",
+      "location": "/images/20171205_153913.jpg"
     }
   ]
 }
