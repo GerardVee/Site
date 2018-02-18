@@ -36,6 +36,7 @@ export default styled(Header)`
     padding-bottom: 8.5em;
     >div>h1 {
         padding-bottom: 1.9em;
+        text-transform: uppercase;
     }
     >div>p {
         height: 3em;
