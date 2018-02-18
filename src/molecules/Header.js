@@ -27,7 +27,7 @@ const Header = ({ content, className, images }) => (
                     </div>
                 </div>
             </div>
-             ])
+        ])
         }
     </div>
 );
